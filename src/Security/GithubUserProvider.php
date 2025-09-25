@@ -60,7 +60,7 @@ class GithubUserProvider implements UserProviderInterface
         return 'App\Entity\User' === $class;
     }
 
-    #[Pure]
+    // #[Pure]
     public function loadUserByIdentifier(string $identifier): UserInterface
     {
         return new User('dDupont', 'dupont', 'ddupont@test.fr','avatarUrl','profilHtmlUrl');
